@@ -1,32 +1,32 @@
 # Busqueda recursiva
-def esta_capitan_america(lista, indice=0):
+def esta_capitan_america(lista, i=0):
     """
     Devuelve True si 'Capitan America' está en la lista, sino False.
     """
     # recorro la lista y no lo encuentro
-    if indice == len(lista):
+    if i == len(lista):
         return False
 
     # Si lo encuentro, corto el ciclo
-    if lista[indice] == "Capitan America":
+    if lista[i] == "Capitan America":
         return True
 
-    return esta_capitan_america(lista, indice + 1)
+    return esta_capitan_america(lista, i + 1)
 
 
 # Listado recursivo
-def listar_superheroes(lista, indice=0):
+def listar_superheroes(lista, i=0):
     """
     Imprime todos los superhéroes de forma recursiva.
     """
     # recorrí toda la lista
-    if indice == len(lista):
+    if i == len(lista):
         return
 
     # muestro el héroe actual
-    print(lista[indice])
+    print(lista[i])
 
-    listar_superheroes(lista, indice + 1)
+    listar_superheroes(lista, i + 1)
 
 
 # Lista
